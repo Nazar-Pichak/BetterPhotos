@@ -1,4 +1,5 @@
 //VARIABLES
+$color-accent: #2cc695;
 
 $color-grey-light: #EEF3F4;
 $color-grey-medium: #A9B4b7;
@@ -36,6 +37,30 @@ a {
     color: inherit;
 }
 
+
+// UTILITY CLASS 
+
+.u-italic {
+    font-style: italic;
+}
+
+.u-accent {
+    color: $color-accent;
+}
+
+.u-underline {
+    text-decoration: underline;
+}
+
+.u-bold {
+    font-weight: 500;
+}
+
+.u-bolder {
+    font-weight: 700;
+}
+
+
 // BASE STYLES 
 
 .page {
@@ -60,10 +85,11 @@ a {
     box-shadow: 0 30px 100px rgba(0, 0, 0, 0.35);
     margin: 80px 0;
     display: grid;
-    grid-template-columns: 335px 1fr;
+    grid-template-columns: 355px 1fr;
     grid-template-rows: 65px 724px 1fr;
 
 }
+
 
 // STYLES 
 
@@ -171,7 +197,7 @@ a {
     &__text {
         color: $color-grey-light;
         font-size: 16px;
-        margin-top: 16px;
+        margin-top: 12px;
         line-height: 1.8;
     }
 }
@@ -184,36 +210,70 @@ a {
 }
 
 .social {
-    &__img {
 
+    display: flex;
+    justify-content: center;
+    margin: 25px 0 30px;
+
+    &__img {
+        height: 35px;
+        width: 35px;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid #fff;
+
+        &:not(:first-child) {
+            margin-left: -8px;
+        }
     }
 
     &__container {
-
+        margin-left: 10px;
     }
 
     &__number {
-
+        font-weight: 500;
     }
 
     &__text {
-
+        font-size: 12px;
+        color: $color-grey-medium;
+        margin-top: -5px;
     }
 }
 
 .auth {
     &__text {
-
+        color: $color-grey-medium;
+        font-size: 12px;
+        text-align: center;
+        margin-top: 8px;
     }
 
     &__link {
-
+        font-weight: 500;
+        color: $color-accent;
+        text-decoration: none;
     }
 }
 
 .btn {
-    &__icon {
+    background-color: #16b47f;
+    padding: 12px 0;
+    display: block;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+    text-decoration: none;
+    transition: $ts;
 
+    &__icon {
+        margin-left: 2px;
+    }
+
+    &:hover, &:focus {
+        background-color: #119267;
     }
 }
 
