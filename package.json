@@ -7,7 +7,9 @@
     "compile": "sass --watch --no-source-map src/main.scss src/style.css",
     "build:compile": "sass --no-source-map src/main.scss build/compiled.css",
     "build:prefixes": "postcss build/compiled.css --use autoprefixer --output build/prefixed.css",
-    "build:optimize": "csso build/prefixed.css  --output build/style.css"
+    "build:optimize": "csso build/prefixed.css  --output build/style.css",
+    "convert-px-to-rem": "postcss ./src/style.css --output ./build/style_rem.css"
+    
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +18,7 @@
     "csso-cli": "^4.0.2",
     "postcss": "^8.4.31",
     "postcss-cli": "^10.1.0",
+    "postcss-pxtorem": "^6.0.0",
     "sass": "^1.68.0"
   }
 }
