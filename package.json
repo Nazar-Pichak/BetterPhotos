@@ -7,8 +7,8 @@
     "compile": "sass --watch --no-source-map src/main.scss src/style.css",
     "build:compile": "sass --no-source-map src/main.scss build/compiled.css",
     "build:prefixes": "postcss build/compiled.css --use autoprefixer --output build/prefixed.css",
-    "build:optimize": "csso build/prefixed.css  --output build/style.css",
-    "convert-px-to-rem": "postcss ./src/style.css --output ./build/style_rem.css"
+    "build:optimize": "csso build/prefixed.css  --output build/style_px.css",
+    "convert-px-to-rem": "postcss ./build/style_px.css --output ./build/style.css"
     
   },
   "author": "",

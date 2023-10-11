@@ -1,8 +1,5 @@
-module.export = {
+module.exports = {
     plugins: [
-        require('postcss-pxtorem')({
-            rootValue: 16,
-            propList: ['*']
-        })
-    ]
-}
+      require('postcss-pxtorem')({rootValue: 16, propList:['*']})
+    ],
+  }
