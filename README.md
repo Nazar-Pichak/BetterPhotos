@@ -29,7 +29,7 @@ npm run compile
 npm run build:compile
 ```
 
-- build vendor prefixes from builded **css** file
+- build vendor prefixes from built **css** file
 
 ```
 npm run build:prefixes
@@ -49,7 +49,7 @@ npm run convert-px-to-rem
 
 **Would you like to contribute ??? 🧑‍💻🧑‍💻🧑‍💻**
 
-Make changes to the code and open Pull Reauest.
+Make changes to the code and open Pull Request.
 
 
 
