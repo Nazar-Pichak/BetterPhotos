@@ -29,7 +29,7 @@ npm run compile
 npm run build:compile
 ```
 
-- build prefixes from builded **css** file
+- build vendor prefixes from builded **css** file
 
 ```
 npm run build:prefixes
